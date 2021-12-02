@@ -8,4 +8,4 @@
 // @copyright    @henices
 // ==/UserScript==
 
-GM_addStyle('body {font-family: "Helvetica Neue",Helvetica,"Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif !important;}');
+GM_addStyle('body { font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans !important;}');
