@@ -8,4 +8,5 @@
 // @copyright    @henices
 // ==/UserScript==
 
-GM_addStyle('body { font-family:  "Helvetica Neue", "Source Han Sans CN", "Microsoft Yahei", "WenQuanYi Micro Hei", "JetBrains Mono", "WenQuanYi Micro Hei Mono", sans-serif !important; font-size: 0.9em;}');
+//GM_addStyle('body {font-family: , Helvetica,"Microsoft YaHei","WenQuanYi Micro Hei",Arial, sans-serif !important; font-size: 14px !important;}');
+GM_addStyle('body { font-family:  "Helvetica", "Source Han Sans CN", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important; font-size: 1rem !important;}');
