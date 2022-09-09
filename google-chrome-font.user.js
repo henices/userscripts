@@ -19,10 +19,10 @@ var css = [
   '}',
   '@font-face {',
   'font-family: "SiYuan";',
-  'src: url(https://fonts.lug.ustc.edu.cn/css?family=Noto+Sans+SC::100,300,400,500,700,900);',
+  'src: local("Source Han Sans CN"), local("Noto Sans SC");',
   '}',
   //'body {font-family: "Only Emoji", Helvetica, "Noto Sans SC", "Source Han Sans CN", sans-serif !important; font-size: 1.1rem !important; line-height: 130% !important;}'].join("\n")
-  'body {font: 16px/1.5 "SiYuan","Source Han Sans CN","Helvetica Neue",Helvetica,"Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif !important;',
+  'body {font: 16px/1.5 "SiYuan","Helvetica Neue",Helvetica,"Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;',
   'text-rendering: optimizelegibility; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }'].join("\n")
 
 GM_addStyle(css);
