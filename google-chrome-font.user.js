@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Force Google Chrome Browser Fonts
-// @version      0.7
+// @version      0.8
 // @description  Better font on Google Chrome browser
 // @exclude      chrome-extension://*/*
 // @match        http://*/*
 // @match        https://*/*
-// @match        file:///*
+// @exclude        file:///*
+// @exclude      https://source.chromium.org/*
+// @exclude      https://github.dev/*
 // @grant        GM_addStyle
 // @copyright    @henices
 // ==/UserScript==
@@ -35,9 +37,15 @@ var css1 = `
   font-family: "SiYuan";
   src: local("Source Han Sans CN"), local("Noto Sans SC");
 }
-body, td, th, div {font: 480 1.05rem/1.6 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
+
+body, td, th, div {font: 500 18px/1.65 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
+                   color: #333;
+                   letter-spacing: 0.02em;
                    text-rendering: optimizelegibility !important;
-                   -webkit-text-size-adjust: 100% !important;}
+                   -webkit-text-size-adjust: 100% !important;
+	               -webkit-font-smoothing: antialiased !important;
+	               font-smoothing: antialiased !important;
+                   }
 `;
 
 GM_addStyle(css1);
