@@ -5,7 +5,7 @@
 // @exclude      chrome-extension://*/*
 // @match        http://*/*
 // @match        https://*/*
-// @exclude        file:///*
+// @exclude      file:///*
 // @exclude      https://source.chromium.org/*
 // @exclude      https://github.dev/*
 // @grant        GM_addStyle
@@ -38,16 +38,20 @@ var css1 = `
   src: local("Source Han Sans CN"), local("Noto Sans SC");
 }
 
-body, td, th, div {
-  font: 500 18px/1.65 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
-  color: #333;
-  letter-spacing: 0.02em;
+
+body {
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
   text-rendering: optimizelegibility !important;
   -webkit-text-size-adjust: 100% !important;
   -webkit-font-smoothing: antialiased !important;
   font-smoothing: antialiased !important;
 }
 
+div {
+  font: 500 18px/1.6 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
+
+}
 `;
 
 GM_addStyle(css1);
