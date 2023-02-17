@@ -49,7 +49,7 @@ body {
 }
 
 div {
-  font: 500 18px/1.6 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
+  font: 500 16px/1.6 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
 
 }
 `;
