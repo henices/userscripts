@@ -37,8 +37,6 @@ var css1 = `
   font-family: "SiYuan";
   src: local("Source Han Sans CN"), local("Noto Sans SC");
 }
-
-
 body {
   letter-spacing: 0.01em;
   word-wrap: break-word;
@@ -47,10 +45,8 @@ body {
   -webkit-font-smoothing: antialiased !important;
   font-smoothing: antialiased !important;
 }
-
 div {
-  font: 500 16px/1.6 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
-
+  font: 500 16px/1.5 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
 }
 `;
 
