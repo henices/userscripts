@@ -28,6 +28,8 @@ var css = [
   'html {text-rendering: optimizelegibility;-webkit-font-smoothing: antialiased;}'].join("\n")
 
 var css1 = `
+@import url("https://cdn.jsdelivr.net/gh/adobe-fonts/source-sans@3.046R/source-sans-3VF.css");
+
 @font-face {
   font-family: "Only Emoji";
   src: local("Noto Color Emoji"), local("Apple Color Emoji"), local("Android Emoji");
@@ -38,15 +40,23 @@ var css1 = `
   src: local("Source Han Sans CN"), local("Noto Sans SC");
 }
 body {
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   word-wrap: break-word;
   text-rendering: optimizelegibility !important;
   -webkit-text-size-adjust: 100% !important;
-  -webkit-font-smoothing: antialiased !important;
-  font-smoothing: antialiased !important;
+  text-spacing-trim: space-first;
+/*  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important; */
+  background: #F8F6F4;
+  color: #333333;
 }
 div {
-  font: 500 16px/1.5 "Helvetica Now Text","Helvetica","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif,"Only Emoji" !important;
+  /*font: 500 16px/1.5 "Helvetica Now Text","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif !important;*/
+  font-weight: 460 !important;
+  line-height: 1.5 !important;
+  font-family: "Helvetica Now Text","Source Han Sans SC VF","PingFang SC","SiYuan","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif !important;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
 }
 `;
 
